@@ -154,9 +154,9 @@ int main()
 		}
 		if (operators.find(toParse[i]) != string::npos){
 			//This checks if two operators are next to each other (operators are supposed to be between two expressions
-			if (operators.find(toParse[i + 1]) != string::npos){
-			cout << "You cannot use two operatros " << toParse[i] <<toParse[i+1] << " consecutively.";
-			return 0;
+			if (operators.find(toParse[i + 1]) != string::npos || toParse[i + 1] == ')'){
+				cout << "You cannot use two operatros " << toParse[i] <<toParse[i+1] << " consecutively.";
+				return 0;				
 			}
 		}
 		if (count(toParse, toParse + i, '(') < count(toParse, toParse + i, ')')) {
