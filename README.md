@@ -14,5 +14,5 @@ The code is extensively commentated but to sum up the idea behind the algorithm.
 As for errors, the program detects many invalid inputs that you can try such as:
 - Characters that are nor digits, operators or brackets. But it handles empty spaces.
 - Dividing by either a litteral zero or by an expression equals to zero.
-- The presence of two operators consecutively in the expression.
+- The presence of two operators consecutively in the expression like '+)' or '*/'.
 - the presence of a closing bracket before an opening bracket.
